@@ -20,7 +20,7 @@
 
 The AI layer uses **LangChain, OpenAI Responses API and Zod structured output**, with versioned prompts, configurable rewrite rules, execution metrics and a small live evaluation suite. The application combines a NestJS API, a React client, PostgreSQL persistence and Redis-backed background jobs.
 
-![Inbox with AI rewrite controls and a draft](docs/screenshots/inbox.png)
+![TeleDraft AI — AI-powered Telegram drafting workspace](docs/assets/teledraft-ai-preview.png)
 
 ## How it works
 
@@ -43,13 +43,30 @@ The bot collects new posts from connected channels. To prepare content from anot
 
 ## Screenshots
 
-**Connected channels**
-
-![Connected Telegram channels and administrator guidance](docs/screenshots/channels.png)
-
-**Routes and reusable rewrite rules**
-
-![Source and destination route with AI defaults and writing rules](docs/screenshots/routes.png)
+<table>
+  <tr>
+    <th>Inbox and AI drafts</th>
+    <th>Connected channels</th>
+    <th>Routes and rewrite rules</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="docs/screenshots/inbox.png">
+        <img src="docs/screenshots/inbox.png" width="260" alt="Inbox with AI rewrite controls and an editable draft" />
+      </a>
+    </td>
+    <td>
+      <a href="docs/screenshots/channels.png">
+        <img src="docs/screenshots/channels.png" width="260" alt="Connected Telegram channels" />
+      </a>
+    </td>
+    <td>
+      <a href="docs/screenshots/routes.png">
+        <img src="docs/screenshots/routes.png" width="260" alt="Channel routes and reusable rewrite rules" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Features
 

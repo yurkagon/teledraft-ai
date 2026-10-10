@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleDraft AI — project preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+        color: #172b3a;
+      }
+
+      .preview {
+        position: relative;
+        width: 2400px;
+        height: 1500px;
+        overflow: hidden;
+        background: #f1f7fb;
+      }
+
+      .blue-sheet {
+        position: absolute;
+        inset: 0;
+        background: #087abb;
+        clip-path: polygon(68% 0, 100% 0, 100% 100%, 43% 100%);
+      }
+
+      .fold {
+        position: absolute;
+        inset: 0;
+        background: #08669c;
+        clip-path: polygon(91% 0, 100% 0, 100% 100%, 74% 100%);
+      }
+
+      .identity {
+        position: absolute;
+        top: 190px;
+        left: 140px;
+        width: 560px;
+      }
+
+      .logo {
+        display: block;
+        width: 204px;
+        height: 204px;
+        padding: 10px;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: 0 20px 55px #172b3a14;
+      }
+
+      h1 {
+        margin: 52px 0 24px;
+        font-size: 86px;
+        line-height: 1.12;
+        letter-spacing: -0.04em;
+        font-weight: 750;
+      }
+
+      h1 span {
+        color: #087abb;
+      }
+
+      .description {
+        margin: 0;
+        font-size: 42px;
+        line-height: 1.38;
+        letter-spacing: -0.02em;
+        color: #526574;
+      }
+
+      .workflow {
+        margin: 80px 0 0;
+        font-size: 34px;
+        font-weight: 550;
+        line-height: 1.7;
+      }
+
+      .workflow strong {
+        color: #08669c;
+        font-weight: 650;
+      }
+
+      .technology {
+        position: absolute;
+        bottom: 140px;
+        left: 140px;
+        margin: 0;
+        color: #526574;
+        font-size: 25px;
+        line-height: 1.5;
+      }
+
+      .workspace {
+        position: absolute;
+        top: 190px;
+        left: 760px;
+        width: 1500px;
+        margin: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 38px 110px #172b3a38;
+      }
+
+      .workspace img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="preview" aria-label="TeleDraft AI project presentation">
+      <div class="blue-sheet" aria-hidden="true"></div>
+      <div class="fold" aria-hidden="true"></div>
+      <header class="identity">
+        <img class="logo" src="teledraft-ai-logo.png" alt="" width="204" height="204" />
+        <h1>TeleDraft <span>AI</span></h1>
+        <p class="description">Your Telegram<br />editorial workspace.</p>
+        <p class="workflow">
+          Collect posts.<br />
+          <strong>Rewrite with AI.</strong><br />
+          Review and publish.
+        </p>
+      </header>
+      <figure class="workspace">
+        <img
+          src="../screenshots/inbox.png"
+          alt="The TeleDraft AI desktop workspace with connected channels, rewrite settings and an editable draft"
+          width="1180"
+          height="900"
+        />
+      </figure>
+      <p class="technology">LangChain · OpenAI<br />React · NestJS</p>
+    </main>
+  </body>
+</html>
